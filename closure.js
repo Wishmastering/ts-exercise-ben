@@ -3,7 +3,7 @@ function outerFunction() {
 
   return function innerFunction() {
     console.log(outerVariable);
-    return true;
+    return "Undo it command test";
   };
 }
 
