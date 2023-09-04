@@ -1,12 +1,7 @@
-function outerFunction() {
-  let outerVariable = "outer execution";
+const me = {
+  talk() {
+    return "Talking";
+  },
+};
 
-  return function innerFunction() {
-    console.log(outerVariable);
-    return "Undo it command test";
-  };
-}
-
-let closure = outerFunction();
-
-console.log(closure());
+console.log(me.talk());

@@ -11,27 +11,25 @@ export default function App() {
   const [counter, setCounter] = useState(0);
   const [user, setUser] = useState<User | null>(null);
 
-  const str = 'abcabbcabcdefg'
+  const str = "abcabbcabcdefg";
 
   const handleCounter = (str: string) => {
     // setCounter((prev) => prev + 1);
 
     // // //
-    
+
     // Recorrer TODO el string (for loop)
     // debo almacenar 'longest substring found' en una variable
 
+    // en CADA STRING que voy a recorrer,
 
-    // en CADA STRING que voy a recorrer, 
-
-    for(let i = 0; i <str.length ; i++){
+    for (let i = 0; i < str.length; i++) {
       let maxLength = 0;
-      let currentStrings : object = {};
+      let currentStrings: object = {};
 
-      for(let j = 0; j <str.length ; j++){
-        if(!currentStrings[str[j]] ===)
-      }
-
+      // for(let j = 0; j <str.length ; j++){
+      //   if(!currentStrings[str[j]] ===)
+      // }
     }
   };
 
@@ -46,7 +44,7 @@ export default function App() {
       Ben test
       <div className="counter-container">
         <h3>{counter}</h3>
-        <button onClick={handleCounter}>Increment</button>
+        <button onClick={() => handleCounter("test")}>Increment</button>
       </div>
       <div>
         <pre>{JSON.stringify(user, null, 2)}</pre>
@@ -54,26 +52,3 @@ export default function App() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
